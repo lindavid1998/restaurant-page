@@ -1,0 +1,60 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 35, 36);
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(32, 35, 36);
+    color: rgb(232, 230, 227);
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.hero {
+    background: url(../src/burrito.jpg);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    color: rgb(255, 204, 38);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    right: 25px;
+    float: right;
+    text-align: right;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.review {
+    background-color: #25272a;
+    padding: 50px 100px;
+    text-align: right;
+    float: right;
+    color: white;
+}
+
+.review .text {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
