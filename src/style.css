@@ -1,60 +1,183 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: rgb(32, 35, 36);
+    box-sizing: border-box; 
 }
 
-#content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header {
-    text-align: center;
-    background-color: rgb(32, 35, 36);
-    color: rgb(232, 230, 227);
-    font-size: 1.5rem;
-    padding: 20px;
-}
-
-.hero {
-    background: url(../src/burrito.jpg);
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero-text {
-    color: rgb(255, 204, 38);
-    font-size: 1.5rem;
-    font-weight: bold;
-    position: relative;
-    top: 25px;
-    right: 25px;
-    float: right;
-    text-align: right;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-    padding: 10px;
-}
-
-.review {
-    background-color: #25272a;
-    padding: 50px 100px;
-    text-align: right;
-    float: right;
+body {
+    background-color: rgb(31, 32, 32);
+    font-family: 'Lora', serif;
     color: white;
 }
 
-.review .text {
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text,
+.hero-image,
+.hero-text,
+.secondary-media {
+    width: 900px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+
+    font-size: 1.4rem;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-name, .nav-item {
+    padding: 5px;
+}
+
+.nav-bar div {
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: border-bottom 1s;
+}
+
+.nav-bar div:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 25px;
+}
+
+.hero-image {
+    margin-top: 10px;            
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    color: white;
+    font-size: 2.5rem;
+    width: 380px;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.secondary-media {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+    color: black;
+}
+
+.secondary-media .text {
+    grid-column: 2 / 5;
+    grid-row: 1;
+    background-color: rgb(170, 163, 130);
+    font-size: 1.8rem;
+    font-weight: 600;
+    order: 1;
+    text-align: left;
+    padding: 250px 90px 250px 50%;
+}
+
+#veggie {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    height: 80%;
+    width: 105%;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: -3px;
+    order: 2;
+}
+
+.button {
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+
+/* menu */
+
+.menu {
+    width: 900px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.appetizers, .entrees {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+
+.item-picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* contact */
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.california {
+    width: 900px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 35, 35);
+    padding: 40px 30px;
+}
+
+.city {
+    font-size: 1.5rem;
+}
+
+.description, .address {
+    margin-bottom: 20px;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+.address div {
+    text-align: center;
 }
