@@ -1,7 +1,7 @@
 import { loadHeader, resetPage } from './page-setup.js'
-import { loadHome } from './load-home.js'
-import { loadMenu } from './load-menu.js'
-import { loadLocations } from './load-locations.js'
+import { loadHome } from './home.js'
+import { loadMenu } from './menu.js'
+import { loadLocations } from './locations.js'
 import './style.css'
 
 // initial load
