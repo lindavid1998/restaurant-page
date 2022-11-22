@@ -1,4 +1,10 @@
 import { createDiv, appendChildren } from './page-setup.js'
+import dumplingImg from './img/dumpling.jpeg'
+import cucumberSaladImg from './img/cucumber-salad.jpeg'
+import soyNoodleImg from './img/soy-noodle.jpeg'
+import xlbImage from './img/xlb.jpeg'
+import soupImage from './img/hot-sour-soup.jpeg'
+
 
 function createMenuItem(item) {
     // returns a 'menu-item' div 
@@ -32,14 +38,14 @@ function createMenuItems(category, items) {
 export function loadMenu() {
 
     let appItems = [
-        ['../src/cucumber-salad.jpeg', 'Cucumber salad', '$10'],
-        ['../src/hot-sour-soup.jpeg', 'Hot & Sour Soup (Pork)', '$11'],
-        ['../src/soy-noodle.jpeg', 'Soy Noodle Salad', '$9']
+        [cucumberSaladImg, 'Cucumber salad', '$10'],
+        [soupImage, 'Hot & Sour Soup (Pork)', '$11'],
+        [soyNoodleImg, 'Soy Noodle Salad', '$9']
     ]
 
     let entItems = [
-        ['../src/xlb.jpeg', 'Pork Xiao Long Bao', '$23'],
-        ['../src/dumpling.jpeg', 'Chicken Dumplings', '$19']
+        [xlbImage, 'Pork Xiao Long Bao', '$23'],
+        [dumplingImg, 'Chicken Dumplings', '$19']
     ]
 
     let menu = createDiv('menu')

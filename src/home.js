@@ -1,9 +1,13 @@
 import { createDiv, appendChildren } from './page-setup.js'
 
+import xlbImage from './img/xlb.jpeg'
+import veggieDumplingImage from './img/veggie.jpeg'
+
+
 function loadHeroImage() {
     let heroImage = createDiv('hero-image');
     let image = document.createElement('img')
-    image.setAttribute('src', '../src/xlb.jpeg')
+    image.setAttribute('src', xlbImage)
     image.setAttribute('alt', 'Xiao long bao from Din Tai Fung')
     heroImage.appendChild(image)
     document.querySelector('.content').appendChild(heroImage)
@@ -17,7 +21,7 @@ function loadHeroText() {
 function loadSecondaryMedia() {  
     let img = document.createElement('img')
     img.setAttribute('id', 'veggie')
-    img.setAttribute('src', '../src/veggie.jpeg')
+    img.setAttribute('src', veggieDumplingImage)
     img.setAttribute('alt', 'Veggie')
     
     let p = document.createElement('p')
